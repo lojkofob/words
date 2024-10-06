@@ -1,0 +1,82 @@
+name: "congrat"
+instances {
+  id: "button"
+  prototype: "/assets/prefabs/button/button.go"
+  position {
+    y: -158.0
+  }
+}
+instances {
+  id: "bg2"
+  prototype: "/assets/prefabs/bg/bg2.go"
+}
+scale_along_z: 0
+embedded_instances {
+  id: "root"
+  children: "bg2"
+  children: "button"
+  children: "title"
+  children: "title2"
+  data: "components {\n"
+  "  id: \"particles\"\n"
+  "  component: \"/assets/prefabs/congrat/particles.particlefx\"\n"
+  "  position {\n"
+  "    y: 31.0\n"
+  "    z: 0.1\n"
+  "  }\n"
+  "}\n"
+  ""
+}
+embedded_instances {
+  id: "title"
+  data: "embedded_components {\n"
+  "  id: \"label\"\n"
+  "  type: \"label\"\n"
+  "  data: \"size {\\n"
+  "  x: 128.0\\n"
+  "  y: 32.0\\n"
+  "}\\n"
+  "text: \\\"\\\\320\\\\243\\\\321\\\\200\\\\320\\\\276\\\\320\\\\262\\\\320\\\\265\\\\320\\\\275\\\\321\\\\214 1 \\\\320\\\\277\\\\321\\\\200\\\\320\\\\276\\\\320\\\\271\\\\320\\\\264\\\\320\\\\265\\\\320\\\\275\\\"\\n"
+  "font: \\\"/assets/prefabs/level/title_font.font\\\"\\n"
+  "material: \\\"/builtins/fonts/label-df.material\\\"\\n"
+  "\"\n"
+  "  position {\n"
+  "    z: 10.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    y: 232.0
+  }
+  scale3 {
+    x: 1.138562
+    y: 1.138562
+    z: 1.2
+  }
+}
+embedded_instances {
+  id: "title2"
+  data: "embedded_components {\n"
+  "  id: \"label\"\n"
+  "  type: \"label\"\n"
+  "  data: \"size {\\n"
+  "  x: 128.0\\n"
+  "  y: 32.0\\n"
+  "}\\n"
+  "text: \\\"\\\\320\\\\230\\\\320\\\\267\\\\321\\\\203\\\\320\\\\274\\\\320\\\\270\\\\321\\\\202\\\\320\\\\265\\\\320\\\\273\\\\321\\\\214\\\\320\\\\275\\\\320\\\\276!\\\"\\n"
+  "font: \\\"/assets/prefabs/letter_bottom/letter_bottom_font.font\\\"\\n"
+  "material: \\\"/builtins/fonts/label-df.material\\\"\\n"
+  "\"\n"
+  "  position {\n"
+  "    z: 10.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    y: 175.0
+  }
+  scale3 {
+    x: 0.82
+    y: 0.82
+  }
+}

@@ -1,0 +1,7 @@
+
+require 'main.misc'
+require 'main.level'
+require 'main.main'
+require 'assets.prefabs.splash.splash'
+require 'assets.prefabs.congrat.congrat'
+require 'assets.prefabs.saveerr.saveerr'

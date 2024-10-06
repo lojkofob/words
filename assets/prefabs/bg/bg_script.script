@@ -1,0 +1,15 @@
+
+require 'main.misc'
+
+
+function _init(self)
+    self.bg_sprite = GameObject.getComponent({}, "bg_sprite", c_sprite)
+	self.w = self.bg_sprite.size.x
+	self.h = self.bg_sprite.size.y
+	self.k = self.w / self.h
+end
+
+function _update(self, dt)
+	local sc = math.max( Screen.real_size.x, Screen.real_size.y ) / math.min( Screen.real_size.x, Screen.real_size.y )  * self.k
+	self.bg_sprite.scale = V3(sc, sc, 1)
+end

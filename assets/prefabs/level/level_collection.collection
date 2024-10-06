@@ -1,0 +1,135 @@
+name: "level_collection"
+instances {
+  id: "bg2"
+  prototype: "/assets/prefabs/bg/bg2.go"
+  position {
+    z: 0.02
+  }
+}
+instances {
+  id: "curve"
+  prototype: "/assets/prefabs/curve/curve.go"
+  position {
+    z: 100.0
+  }
+}
+scale_along_z: 0
+embedded_instances {
+  id: "root"
+  children: "bg2"
+  children: "bottom"
+  children: "curve"
+  children: "mid"
+  children: "title"
+  children: "top"
+  data: ""
+}
+embedded_instances {
+  id: "bottom"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"h590\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/main.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "  position {\n"
+  "    z: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    y: -342.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "top"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"h590\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "slice9 {\\n"
+  "  x: 150.0\\n"
+  "  y: 150.0\\n"
+  "  z: 150.0\\n"
+  "  w: 150.0\\n"
+  "}\\n"
+  "size {\\n"
+  "  x: 300.0\\n"
+  "  y: 500.0\\n"
+  "}\\n"
+  "size_mode: SIZE_MODE_MANUAL\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/main.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "  position {\n"
+  "    z: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    y: 213.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "title"
+  data: "embedded_components {\n"
+  "  id: \"label\"\n"
+  "  type: \"label\"\n"
+  "  data: \"size {\\n"
+  "  x: 128.0\\n"
+  "  y: 32.0\\n"
+  "}\\n"
+  "text: \\\"\\\\320\\\\243\\\\321\\\\200\\\\320\\\\276\\\\320\\\\262\\\\320\\\\265\\\\320\\\\275\\\\321\\\\214\\\"\\n"
+  "font: \\\"/assets/prefabs/level/title_font.font\\\"\\n"
+  "material: \\\"/builtins/fonts/label-df.material\\\"\\n"
+  "\"\n"
+  "  position {\n"
+  "    y: 521.0\n"
+  "    z: 10.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "mid"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"h590\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 300.0\\n"
+  "  y: 300.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/main/main.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "  position {\n"
+  "    z: 1.0\n"
+  "  }\n"
+  "  scale {\n"
+  "    x: 0.1\n"
+  "    y: 0.1\n"
+  "    z: 0.1\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    y: -115.0
+    z: 1.0
+  }
+}
